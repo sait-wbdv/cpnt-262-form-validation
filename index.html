@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escape Room Form Challenge</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Form Validation Escape Room</h1>
+    <form id="escape-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+      <small class="error" id="name-error">Name is required.</small>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+      <small class="error" id="email-error">Please enter a valid email.</small>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" required />
+      <small class="error" id="age-error">Must be 18 or older.</small>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required />
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" required />
+      <small class="error" id="password-error">Passwords must match.</small>
+
+      <label>
+        <input type="checkbox" id="agreement" required />
+        I agree to the terms and conditions.
+      </label>
+      <small class="error" id="agreement-error"
+        >You must agree to continue.</small
+      >
+
+      <button type="submit" id="submit-button">Submit</button>
+    </form>
+
+    <div id="escape-key" style="display: none">
+      🎉 Congratulations! You’ve escaped! 🎉
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
